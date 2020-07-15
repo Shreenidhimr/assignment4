@@ -1,25 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductAddComponent } from './product-add/product-add.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { IndviewComponent } from './indview/indview.component';
+import { ProductListViewComponent } from './product-list-view/product-list-view.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductAddComponent,
-    ProductListComponent,
-    IndviewComponent
+    ProductListViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ProductAddComponent]
 })
 export class AppModule { }

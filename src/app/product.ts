@@ -3,5 +3,4 @@ export class Product {
     pname:string
     price:number
     stock:number
-
 }
